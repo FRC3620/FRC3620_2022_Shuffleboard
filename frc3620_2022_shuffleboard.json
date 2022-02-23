@@ -48,8 +48,8 @@
       }
     },
     {
-      "title": "LiveWindow",
-      "autoPopulate": true,
+      "title": "DriveSubsystem test",
+      "autoPopulate": false,
       "autoPopulatePrefix": "LiveWindow/",
       "widgetPane": {
         "gridSize": 128.0,
@@ -58,7 +58,7 @@
         "vgap": 16.0,
         "titleType": 1,
         "tiles": {
-          "5,0": {
+          "8,0": {
             "size": [
               2,
               4
@@ -442,43 +442,6 @@
               ]
             }
           },
-          "9,0": {
-            "size": [
-              2,
-              1
-            ],
-            "content": {
-              "_type": "Basic Subsystem",
-              "_source0": "network_table:///LiveWindow/ArmSubsystem",
-              "_title": "ArmSubsystem"
-            }
-          },
-          "9,1": {
-            "size": [
-              2,
-              4
-            ],
-            "content": {
-              "_type": "Subsystem Layout",
-              "_source0": "network_table:///LiveWindow/RumbleSubsystem",
-              "_title": "RumbleSubsystem",
-              "Layout/Label position": "BOTTOM",
-              "_children": []
-            }
-          },
-          "0,0": {
-            "size": [
-              2,
-              4
-            ],
-            "content": {
-              "_type": "Subsystem Layout",
-              "_source0": "network_table:///LiveWindow/VisionSubsystem",
-              "_title": "VisionSubsystem",
-              "Layout/Label position": "BOTTOM",
-              "_children": []
-            }
-          },
           "11,0": {
             "size": [
               2,
@@ -541,30 +504,111 @@
               ]
             }
           },
+          "4,0": {
+            "size": [
+              2,
+              4
+            ],
+            "content": {
+              "_type": "List Layout",
+              "_title": "Drive Motors",
+              "Layout/Label position": "TOP",
+              "_children": [
+                {
+                  "_type": "Motor Controller",
+                  "_source0": "network_table:///LiveWindow/DriveSubsystem/left front drive",
+                  "_title": "left front drive",
+                  "Visuals/Orientation": "HORIZONTAL"
+                },
+                {
+                  "_type": "Motor Controller",
+                  "_source0": "network_table:///LiveWindow/DriveSubsystem/right front drive",
+                  "_title": "right front drive",
+                  "Visuals/Orientation": "HORIZONTAL"
+                },
+                {
+                  "_type": "Motor Controller",
+                  "_source0": "network_table:///LiveWindow/DriveSubsystem/left back drive",
+                  "_title": "left back drive",
+                  "Visuals/Orientation": "HORIZONTAL"
+                },
+                {
+                  "_type": "Motor Controller",
+                  "_source0": "network_table:///LiveWindow/DriveSubsystem/right back drive",
+                  "_title": "right back drive",
+                  "Visuals/Orientation": "HORIZONTAL"
+                }
+              ]
+            }
+          },
+          "7,0": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///LiveWindow/DriveSubsystem/left back azimuth/Value",
+              "_title": "left back azimuth/Value"
+            }
+          },
+          "10,0": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///LiveWindow/DriveSubsystem/left front azimuth/Value",
+              "_title": "left front azimuth/Value"
+            }
+          },
+          "10,1": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///LiveWindow/DriveSubsystem/right front azimuth/Value",
+              "_title": "right front azimuth/Value"
+            }
+          },
           "2,0": {
             "size": [
               2,
               4
             ],
             "content": {
-              "_type": "Subsystem Layout",
-              "_source0": "network_table:///LiveWindow/IntakeSubsystem",
-              "_title": "IntakeSubsystem",
-              "Layout/Label position": "BOTTOM",
-              "_children": []
-            }
-          },
-          "7,0": {
-            "size": [
-              2,
-              4
-            ],
-            "content": {
-              "_type": "Subsystem Layout",
-              "_source0": "network_table:///LiveWindow/TurretSubsystem",
-              "_title": "TurretSubsystem",
-              "Layout/Label position": "BOTTOM",
-              "_children": []
+              "_type": "List Layout",
+              "_title": "Azimuth Motors",
+              "Layout/Label position": "TOP",
+              "_children": [
+                {
+                  "_type": "Motor Controller",
+                  "_source0": "network_table:///LiveWindow/DriveSubsystem/left front azimuth",
+                  "_title": "left front azimuth",
+                  "Visuals/Orientation": "HORIZONTAL"
+                },
+                {
+                  "_type": "Motor Controller",
+                  "_source0": "network_table:///LiveWindow/DriveSubsystem/right front azimuth",
+                  "_title": "right front azimuth",
+                  "Visuals/Orientation": "HORIZONTAL"
+                },
+                {
+                  "_type": "Motor Controller",
+                  "_source0": "network_table:///LiveWindow/DriveSubsystem/left back azimuth",
+                  "_title": "left back azimuth",
+                  "Visuals/Orientation": "HORIZONTAL"
+                },
+                {
+                  "_type": "Motor Controller",
+                  "_source0": "network_table:///LiveWindow/DriveSubsystem/right back azimuth",
+                  "_title": "right back azimuth",
+                  "Visuals/Orientation": "HORIZONTAL"
+                }
+              ]
             }
           }
         }
