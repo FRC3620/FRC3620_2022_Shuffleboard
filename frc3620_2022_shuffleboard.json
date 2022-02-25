@@ -43,12 +43,56 @@
               "_source0": "network_table:///SmartDashboard/NavX heading",
               "_title": "SmartDashboard/NavX heading"
             }
+          },
+          "7,2": {
+            "size": [
+              2,
+              1
+            ],
+            "content": {
+              "_type": "Command",
+              "_source0": "network_table:///SmartDashboard/Rumble Command",
+              "_title": "SmartDashboard/Rumble Command"
+            }
+          },
+          "3,3": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Command",
+              "_source0": "network_table:///SmartDashboard/Rumble Command 2",
+              "_title": "SmartDashboard/Rumble Command 2"
+            }
+          },
+          "4,3": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Command",
+              "_source0": "network_table:///SmartDashboard/Rumble Command 3",
+              "_title": "SmartDashboard/Rumble Command 3"
+            }
+          },
+          "5,3": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Command",
+              "_source0": "network_table:///SmartDashboard/Rumble Command 4",
+              "_title": "SmartDashboard/Rumble Command 4"
+            }
           }
         }
       }
     },
     {
-      "title": "DriveSubsystem test",
+      "title": "LiveWindow",
       "autoPopulate": false,
       "autoPopulatePrefix": "LiveWindow/",
       "widgetPane": {
@@ -58,390 +102,6 @@
         "vgap": 16.0,
         "titleType": 1,
         "tiles": {
-          "8,0": {
-            "size": [
-              2,
-              4
-            ],
-            "content": {
-              "_type": "Subsystem Layout",
-              "_source0": "network_table:///LiveWindow/Ungrouped",
-              "_title": "Ungrouped",
-              "Layout/Label position": "BOTTOM",
-              "_children": [
-                {
-                  "_type": "Boolean Box",
-                  "_source0": "network_table:///LiveWindow/Ungrouped/Solenoid[0,4]/Value",
-                  "_title": "Solenoid[0,4]/Value",
-                  "Colors/Color when true": "#7CFC00FF",
-                  "Colors/Color when false": "#8B0000FF"
-                },
-                {
-                  "_type": "Boolean Box",
-                  "_source0": "network_table:///LiveWindow/Ungrouped/DigitalInput[0]/Value",
-                  "_title": "DigitalInput[0]/Value",
-                  "Colors/Color when true": "#7CFC00FF",
-                  "Colors/Color when false": "#8B0000FF"
-                },
-                {
-                  "_type": "Boolean Box",
-                  "_source0": "network_table:///LiveWindow/Ungrouped/Solenoid[0,2]/Value",
-                  "_title": "Solenoid[0,2]/Value",
-                  "Colors/Color when true": "#7CFC00FF",
-                  "Colors/Color when false": "#8B0000FF"
-                },
-                {
-                  "_type": "Text View",
-                  "_source0": "network_table:///LiveWindow/Ungrouped/Counter[0]/Value",
-                  "_title": "Counter[0]/Value"
-                },
-                {
-                  "_type": "Boolean Box",
-                  "_source0": "network_table:///LiveWindow/Ungrouped/DigitalInput[1]/Value",
-                  "_title": "DigitalInput[1]/Value",
-                  "Colors/Color when true": "#7CFC00FF",
-                  "Colors/Color when false": "#8B0000FF"
-                },
-                {
-                  "_type": "Boolean Box",
-                  "_source0": "network_table:///LiveWindow/Ungrouped/Solenoid[0,3]/Value",
-                  "_title": "Solenoid[0,3]/Value",
-                  "Colors/Color when true": "#7CFC00FF",
-                  "Colors/Color when false": "#8B0000FF"
-                },
-                {
-                  "_type": "Boolean Box",
-                  "_source0": "network_table:///LiveWindow/Ungrouped/Solenoid[0,1]/Value",
-                  "_title": "Solenoid[0,1]/Value",
-                  "Colors/Color when true": "#7CFC00FF",
-                  "Colors/Color when false": "#8B0000FF"
-                },
-                {
-                  "_type": "Boolean Box",
-                  "_source0": "network_table:///LiveWindow/Ungrouped/DigitalInput[2]/Value",
-                  "_title": "DigitalInput[2]/Value",
-                  "Colors/Color when true": "#7CFC00FF",
-                  "Colors/Color when false": "#8B0000FF"
-                },
-                {
-                  "_type": "Boolean Box",
-                  "_source0": "network_table:///LiveWindow/Ungrouped/DigitalInput[9]/Value",
-                  "_title": "DigitalInput[9]/Value",
-                  "Colors/Color when true": "#7CFC00FF",
-                  "Colors/Color when false": "#8B0000FF"
-                },
-                {
-                  "_type": "Boolean Box",
-                  "_source0": "network_table:///LiveWindow/Ungrouped/DigitalInput[4]/Value",
-                  "_title": "DigitalInput[4]/Value",
-                  "Colors/Color when true": "#7CFC00FF",
-                  "Colors/Color when false": "#8B0000FF"
-                },
-                {
-                  "_type": "Boolean Box",
-                  "_source0": "network_table:///LiveWindow/Ungrouped/DigitalInput[3]/Value",
-                  "_title": "DigitalInput[3]/Value",
-                  "Colors/Color when true": "#7CFC00FF",
-                  "Colors/Color when false": "#8B0000FF"
-                },
-                {
-                  "_type": "Text View",
-                  "_source0": "network_table:///LiveWindow/Ungrouped/Counter[1]/Value",
-                  "_title": "Counter[1]/Value"
-                },
-                {
-                  "_type": "PDP",
-                  "_source0": "network_table:///LiveWindow/Ungrouped/PowerDistributionPanel[0]",
-                  "_title": "PowerDistributionPanel[0]",
-                  "Visuals/Show voltage and current values": true
-                },
-                {
-                  "_type": "Encoder",
-                  "_source0": "network_table:///LiveWindow/Ungrouped/Encoder[1]",
-                  "_title": "Encoder[1]"
-                },
-                {
-                  "_type": "Boolean Box",
-                  "_source0": "network_table:///LiveWindow/Ungrouped/DigitalInput[5]/Value",
-                  "_title": "DigitalInput[5]/Value",
-                  "Colors/Color when true": "#7CFC00FF",
-                  "Colors/Color when false": "#8B0000FF"
-                },
-                {
-                  "_type": "Encoder",
-                  "_source0": "network_table:///LiveWindow/Ungrouped/Encoder[0]",
-                  "_title": "Encoder[0]"
-                },
-                {
-                  "_type": "Text View",
-                  "_source0": "network_table:///LiveWindow/Ungrouped/Talon SRX [2]/Value",
-                  "_title": "Talon SRX [2]/Value"
-                },
-                {
-                  "_type": "Text View",
-                  "_source0": "network_table:///LiveWindow/Ungrouped/DoubleSolenoid[0,4]/Value",
-                  "_title": "DoubleSolenoid[0,4]/Value"
-                },
-                {
-                  "_type": "Text View",
-                  "_source0": "network_table:///LiveWindow/Ungrouped/DoubleSolenoid[0,2]/Value",
-                  "_title": "DoubleSolenoid[0,2]/Value"
-                },
-                {
-                  "_type": "Boolean Box",
-                  "_source0": "network_table:///LiveWindow/Ungrouped/Solenoid[0,0]/Value",
-                  "_title": "Solenoid[0,0]/Value",
-                  "Colors/Color when true": "#7CFC00FF",
-                  "Colors/Color when false": "#8B0000FF"
-                },
-                {
-                  "_type": "3-Axis Accelerometer",
-                  "_source0": "network_table:///LiveWindow/Ungrouped/BuiltInAccel[0]",
-                  "_title": "BuiltInAccel[0]",
-                  "Accelerometer/Range": "k16G",
-                  "Visuals/Show value": true,
-                  "Visuals/Precision": 2,
-                  "Visuals/Show tick marks": false
-                },
-                {
-                  "_type": "Boolean Box",
-                  "_source0": "network_table:///LiveWindow/Ungrouped/Solenoid[1,0]/Value",
-                  "_title": "Solenoid[1,0]/Value",
-                  "Colors/Color when true": "#7CFC00FF",
-                  "Colors/Color when false": "#8B0000FF"
-                },
-                {
-                  "_type": "Boolean Box",
-                  "_source0": "network_table:///LiveWindow/Ungrouped/Compressor[0]/Enabled",
-                  "_title": "Compressor[0]/Enabled",
-                  "Colors/Color when true": "#7CFC00FF",
-                  "Colors/Color when false": "#8B0000FF"
-                },
-                {
-                  "_type": "Boolean Box",
-                  "_source0": "network_table:///LiveWindow/Ungrouped/Solenoid[1,1]/Value",
-                  "_title": "Solenoid[1,1]/Value",
-                  "Colors/Color when true": "#7CFC00FF",
-                  "Colors/Color when false": "#8B0000FF"
-                },
-                {
-                  "_type": "Boolean Box",
-                  "_source0": "network_table:///LiveWindow/Ungrouped/Compressor[0]/Pressure switch",
-                  "_title": "Compressor[0]/Pressure switch",
-                  "Colors/Color when true": "#7CFC00FF",
-                  "Colors/Color when false": "#8B0000FF"
-                },
-                {
-                  "_type": "Voltage View",
-                  "_source0": "network_table:///LiveWindow/Ungrouped/AnalogInput[0]",
-                  "_title": "AnalogInput[0]",
-                  "Range/Min": 0.0,
-                  "Range/Max": 5.0,
-                  "Range/Center": 0.0,
-                  "Visuals/Orientation": "HORIZONTAL",
-                  "Visuals/Number of tick marks": 5
-                },
-                {
-                  "_type": "Boolean Box",
-                  "_source0": "network_table:///LiveWindow/Ungrouped/DigitalInput[6]/Value",
-                  "_title": "DigitalInput[6]/Value",
-                  "Colors/Color when true": "#7CFC00FF",
-                  "Colors/Color when false": "#8B0000FF"
-                },
-                {
-                  "_type": "Boolean Box",
-                  "_source0": "network_table:///LiveWindow/Ungrouped/DigitalInput[7]/Value",
-                  "_title": "DigitalInput[7]/Value",
-                  "Colors/Color when true": "#7CFC00FF",
-                  "Colors/Color when false": "#8B0000FF"
-                },
-                {
-                  "_type": "Voltage View",
-                  "_source0": "network_table:///LiveWindow/Ungrouped/AnalogInput[1]",
-                  "_title": "AnalogInput[1]",
-                  "Range/Min": 0.0,
-                  "Range/Max": 5.0,
-                  "Range/Center": 0.0,
-                  "Visuals/Orientation": "HORIZONTAL",
-                  "Visuals/Number of tick marks": 5
-                },
-                {
-                  "_type": "PID Controller",
-                  "_source0": "network_table:///LiveWindow/Ungrouped/PIDController[1]",
-                  "_title": "PIDController[1]"
-                },
-                {
-                  "_type": "Voltage View",
-                  "_source0": "network_table:///LiveWindow/Ungrouped/AnalogInput[2]",
-                  "_title": "AnalogInput[2]",
-                  "Range/Min": 0.0,
-                  "Range/Max": 5.0,
-                  "Range/Center": 0.0,
-                  "Visuals/Orientation": "HORIZONTAL",
-                  "Visuals/Number of tick marks": 5
-                },
-                {
-                  "_type": "Voltage View",
-                  "_source0": "network_table:///LiveWindow/Ungrouped/AnalogInput[3]",
-                  "_title": "AnalogInput[3]",
-                  "Range/Min": 0.0,
-                  "Range/Max": 5.0,
-                  "Range/Center": 0.0,
-                  "Visuals/Orientation": "HORIZONTAL",
-                  "Visuals/Number of tick marks": 5
-                },
-                {
-                  "_type": "Boolean Box",
-                  "_source0": "network_table:///LiveWindow/Ungrouped/Solenoid[0,5]/Value",
-                  "_title": "Solenoid[0,5]/Value",
-                  "Colors/Color when true": "#7CFC00FF",
-                  "Colors/Color when false": "#8B0000FF"
-                },
-                {
-                  "_type": "Gyro",
-                  "_source0": "network_table:///LiveWindow/Ungrouped/navX-Sensor",
-                  "_title": "navX-Sensor",
-                  "Visuals/Major tick spacing": 45.0,
-                  "Visuals/Starting angle": 180.0,
-                  "Visuals/Show tick mark ring": true,
-                  "Visuals/Counter clockwise": false
-                },
-                {
-                  "_type": "Boolean Box",
-                  "_source0": "network_table:///LiveWindow/Ungrouped/Solenoid[0,6]/Value",
-                  "_title": "Solenoid[0,6]/Value",
-                  "Colors/Color when true": "#7CFC00FF",
-                  "Colors/Color when false": "#8B0000FF"
-                },
-                {
-                  "_type": "PID Controller",
-                  "_source0": "network_table:///LiveWindow/Ungrouped/PIDController[2]",
-                  "_title": "PIDController[2]"
-                },
-                {
-                  "_type": "Boolean Box",
-                  "_source0": "network_table:///LiveWindow/Ungrouped/Solenoid[0,7]/Value",
-                  "_title": "Solenoid[0,7]/Value",
-                  "Colors/Color when true": "#7CFC00FF",
-                  "Colors/Color when false": "#8B0000FF"
-                },
-                {
-                  "_type": "Boolean Box",
-                  "_source0": "network_table:///LiveWindow/Ungrouped/PowerDistribution[0]/SwitchableChannel",
-                  "_title": "PowerDistribution[0]/SwitchableChannel",
-                  "Colors/Color when true": "#7CFC00FF",
-                  "Colors/Color when false": "#8B0000FF"
-                },
-                {
-                  "_type": "Text View",
-                  "_source0": "network_table:///LiveWindow/Ungrouped/PowerDistribution[0]/Voltage",
-                  "_title": "PowerDistribution[0]/Voltage"
-                },
-                {
-                  "_type": "Text View",
-                  "_source0": "network_table:///LiveWindow/Ungrouped/PowerDistribution[0]/Chan10",
-                  "_title": "PowerDistribution[0]/Chan10"
-                },
-                {
-                  "_type": "Text View",
-                  "_source0": "network_table:///LiveWindow/Ungrouped/PowerDistribution[0]/Chan11",
-                  "_title": "PowerDistribution[0]/Chan11"
-                },
-                {
-                  "_type": "Text View",
-                  "_source0": "network_table:///LiveWindow/Ungrouped/PowerDistribution[0]/Chan12",
-                  "_title": "PowerDistribution[0]/Chan12"
-                },
-                {
-                  "_type": "Text View",
-                  "_source0": "network_table:///LiveWindow/Ungrouped/PowerDistribution[0]/Chan13",
-                  "_title": "PowerDistribution[0]/Chan13"
-                },
-                {
-                  "_type": "Text View",
-                  "_source0": "network_table:///LiveWindow/Ungrouped/PowerDistribution[0]/Chan15",
-                  "_title": "PowerDistribution[0]/Chan15"
-                },
-                {
-                  "_type": "Text View",
-                  "_source0": "network_table:///LiveWindow/Ungrouped/PowerDistribution[0]/Chan14",
-                  "_title": "PowerDistribution[0]/Chan14"
-                },
-                {
-                  "_type": "Text View",
-                  "_source0": "network_table:///LiveWindow/Ungrouped/PowerDistribution[0]/Chan0",
-                  "_title": "PowerDistribution[0]/Chan0"
-                },
-                {
-                  "_type": "Text View",
-                  "_source0": "network_table:///LiveWindow/Ungrouped/PowerDistribution[0]/Chan2",
-                  "_title": "PowerDistribution[0]/Chan2"
-                },
-                {
-                  "_type": "Text View",
-                  "_source0": "network_table:///LiveWindow/Ungrouped/PowerDistribution[0]/Chan4",
-                  "_title": "PowerDistribution[0]/Chan4"
-                },
-                {
-                  "_type": "Text View",
-                  "_source0": "network_table:///LiveWindow/Ungrouped/PowerDistribution[0]/Chan1",
-                  "_title": "PowerDistribution[0]/Chan1"
-                },
-                {
-                  "_type": "Text View",
-                  "_source0": "network_table:///LiveWindow/Ungrouped/PowerDistribution[0]/Chan5",
-                  "_title": "PowerDistribution[0]/Chan5"
-                },
-                {
-                  "_type": "Text View",
-                  "_source0": "network_table:///LiveWindow/Ungrouped/PowerDistribution[0]/Chan3",
-                  "_title": "PowerDistribution[0]/Chan3"
-                },
-                {
-                  "_type": "Text View",
-                  "_source0": "network_table:///LiveWindow/Ungrouped/PowerDistribution[0]/Chan7",
-                  "_title": "PowerDistribution[0]/Chan7"
-                },
-                {
-                  "_type": "Text View",
-                  "_source0": "network_table:///LiveWindow/Ungrouped/PowerDistribution[0]/Chan8",
-                  "_title": "PowerDistribution[0]/Chan8"
-                },
-                {
-                  "_type": "Text View",
-                  "_source0": "network_table:///LiveWindow/Ungrouped/PowerDistribution[0]/Chan6",
-                  "_title": "PowerDistribution[0]/Chan6"
-                },
-                {
-                  "_type": "Text View",
-                  "_source0": "network_table:///LiveWindow/Ungrouped/PowerDistribution[0]/Chan9",
-                  "_title": "PowerDistribution[0]/Chan9"
-                },
-                {
-                  "_type": "Text View",
-                  "_source0": "network_table:///LiveWindow/Ungrouped/PowerDistribution[0]/TotalCurrent",
-                  "_title": "PowerDistribution[0]/TotalCurrent"
-                },
-                {
-                  "_type": "Motor Controller",
-                  "_source0": "network_table:///LiveWindow/Ungrouped/Talon FX [40]",
-                  "_title": "LiveWindow/Ungrouped/Talon FX [40]",
-                  "Visuals/Orientation": "HORIZONTAL"
-                },
-                {
-                  "_type": "Motor Controller",
-                  "_source0": "network_table:///LiveWindow/Ungrouped/Talon FX [21]",
-                  "_title": "LiveWindow/Ungrouped/Talon FX [21]",
-                  "Visuals/Orientation": "HORIZONTAL"
-                },
-                {
-                  "_type": "Text View",
-                  "_source0": "network_table:///LiveWindow/Ungrouped/DoubleSolenoid[0,0]/Value",
-                  "_title": "LiveWindow/Ungrouped/DoubleSolenoid[0,0]/Value"
-                }
-              ]
-            }
-          },
           "11,0": {
             "size": [
               2,
@@ -504,7 +164,7 @@
               ]
             }
           },
-          "4,0": {
+          "2,0": {
             "size": [
               2,
               4
@@ -541,40 +201,7 @@
               ]
             }
           },
-          "7,0": {
-            "size": [
-              1,
-              1
-            ],
-            "content": {
-              "_type": "Text View",
-              "_source0": "network_table:///LiveWindow/DriveSubsystem/left back azimuth/Value",
-              "_title": "left back azimuth/Value"
-            }
-          },
-          "10,0": {
-            "size": [
-              1,
-              1
-            ],
-            "content": {
-              "_type": "Text View",
-              "_source0": "network_table:///LiveWindow/DriveSubsystem/left front azimuth/Value",
-              "_title": "left front azimuth/Value"
-            }
-          },
-          "10,1": {
-            "size": [
-              1,
-              1
-            ],
-            "content": {
-              "_type": "Text View",
-              "_source0": "network_table:///LiveWindow/DriveSubsystem/right front azimuth/Value",
-              "_title": "right front azimuth/Value"
-            }
-          },
-          "2,0": {
+          "0,0": {
             "size": [
               2,
               4
@@ -587,25 +214,218 @@
                 {
                   "_type": "Motor Controller",
                   "_source0": "network_table:///LiveWindow/DriveSubsystem/left front azimuth",
-                  "_title": "left front azimuth",
+                  "_title": "LiveWindow/DriveSubsystem/left front azimuth",
                   "Visuals/Orientation": "HORIZONTAL"
                 },
                 {
                   "_type": "Motor Controller",
                   "_source0": "network_table:///LiveWindow/DriveSubsystem/right front azimuth",
-                  "_title": "right front azimuth",
+                  "_title": "LiveWindow/DriveSubsystem/right front azimuth",
                   "Visuals/Orientation": "HORIZONTAL"
                 },
                 {
                   "_type": "Motor Controller",
                   "_source0": "network_table:///LiveWindow/DriveSubsystem/left back azimuth",
-                  "_title": "left back azimuth",
+                  "_title": "LiveWindow/DriveSubsystem/left back azimuth",
                   "Visuals/Orientation": "HORIZONTAL"
                 },
                 {
                   "_type": "Motor Controller",
                   "_source0": "network_table:///LiveWindow/DriveSubsystem/right back azimuth",
-                  "_title": "right back azimuth",
+                  "_title": "LiveWindow/DriveSubsystem/right back azimuth",
+                  "Visuals/Orientation": "HORIZONTAL"
+                }
+              ]
+            }
+          },
+          "4,0": {
+            "size": [
+              2,
+              3
+            ],
+            "content": {
+              "_type": "List Layout",
+              "_title": "Home Encoders",
+              "Layout/Label position": "TOP",
+              "_children": [
+                {
+                  "_type": "Voltage View",
+                  "_source0": "network_table:///LiveWindow/DriveSubsystem/left front home encoder",
+                  "_title": "LiveWindow/DriveSubsystem/left front home encoder",
+                  "Range/Min": 0.0,
+                  "Range/Max": 5.0,
+                  "Range/Center": 0.0,
+                  "Visuals/Orientation": "HORIZONTAL",
+                  "Visuals/Number of tick marks": 5
+                },
+                {
+                  "_type": "Voltage View",
+                  "_source0": "network_table:///LiveWindow/DriveSubsystem/right front home encoder",
+                  "_title": "LiveWindow/DriveSubsystem/right front home encoder",
+                  "Range/Min": 0.0,
+                  "Range/Max": 5.0,
+                  "Range/Center": 0.0,
+                  "Visuals/Orientation": "HORIZONTAL",
+                  "Visuals/Number of tick marks": 5
+                },
+                {
+                  "_type": "Voltage View",
+                  "_source0": "network_table:///LiveWindow/DriveSubsystem/left back home encoder",
+                  "_title": "LiveWindow/DriveSubsystem/left back home encoder",
+                  "Range/Min": 0.0,
+                  "Range/Max": 5.0,
+                  "Range/Center": 0.0,
+                  "Visuals/Orientation": "HORIZONTAL",
+                  "Visuals/Number of tick marks": 5
+                },
+                {
+                  "_type": "Voltage View",
+                  "_source0": "network_table:///LiveWindow/DriveSubsystem/right back home encoder",
+                  "_title": "LiveWindow/DriveSubsystem/right back home encoder",
+                  "Range/Min": 0.0,
+                  "Range/Max": 5.0,
+                  "Range/Center": 0.0,
+                  "Visuals/Orientation": "HORIZONTAL",
+                  "Visuals/Number of tick marks": 5
+                }
+              ]
+            }
+          },
+          "4,3": {
+            "size": [
+              2,
+              1
+            ],
+            "content": {
+              "_type": "Subsystem Layout",
+              "_source0": "network_table:///LiveWindow/ArmSubsystem",
+              "_title": "LiveWindow/ArmSubsystem",
+              "Layout/Label position": "TOP",
+              "_children": [
+                {
+                  "_type": "Boolean Box",
+                  "_source0": "network_table:///LiveWindow/ArmSubsystem/tilt/Value",
+                  "_title": "tilt/Value",
+                  "Colors/Color when true": "#7CFC00FF",
+                  "Colors/Color when false": "#8B0000FF"
+                }
+              ]
+            }
+          },
+          "8,0": {
+            "size": [
+              2,
+              3
+            ],
+            "content": {
+              "_type": "Subsystem Layout",
+              "_source0": "network_table:///LiveWindow/IntakeSubsystem",
+              "_title": "LiveWindow/IntakeSubsystem",
+              "Layout/Label position": "TOP",
+              "_children": [
+                {
+                  "_type": "Motor Controller",
+                  "_source0": "network_table:///LiveWindow/IntakeSubsystem/intake belt",
+                  "_title": "intake belt",
+                  "Visuals/Orientation": "HORIZONTAL"
+                },
+                {
+                  "_type": "Motor Controller",
+                  "_source0": "network_table:///LiveWindow/IntakeSubsystem/intake wheelbar",
+                  "_title": "intake wheelbar",
+                  "Visuals/Orientation": "HORIZONTAL"
+                },
+                {
+                  "_type": "Boolean Box",
+                  "_source0": "network_table:///LiveWindow/IntakeSubsystem/intake arm/Value",
+                  "_title": "intake arm/Value",
+                  "Colors/Color when true": "#7CFC00FF",
+                  "Colors/Color when false": "#8B0000FF"
+                }
+              ]
+            }
+          },
+          "8,3": {
+            "size": [
+              2,
+              2
+            ],
+            "content": {
+              "_type": "Subsystem Layout",
+              "_source0": "network_table:///LiveWindow/ClimberSubsystem",
+              "_title": "LiveWindow/ClimberSubsystem",
+              "Layout/Label position": "TOP",
+              "_children": [
+                {
+                  "_type": "Motor Controller",
+                  "_source0": "network_table:///LiveWindow/ClimberSubsystem/climber motor",
+                  "_title": "climber motor",
+                  "Visuals/Orientation": "HORIZONTAL"
+                },
+                {
+                  "_type": "Boolean Box",
+                  "_source0": "network_table:///LiveWindow/ClimberSubsystem/climber contact switch/Value",
+                  "_title": "climber contact switch/Value",
+                  "Colors/Color when true": "#7CFC00FF",
+                  "Colors/Color when false": "#8B0000FF"
+                }
+              ]
+            }
+          },
+          "4,4": {
+            "size": [
+              2,
+              1
+            ],
+            "content": {
+              "_type": "Subsystem Layout",
+              "_source0": "network_table:///LiveWindow/VisionSubsystem",
+              "_title": "LiveWindow/VisionSubsystem",
+              "Layout/Label position": "BOTTOM",
+              "_children": [
+                {
+                  "_type": "Boolean Box",
+                  "_source0": "network_table:///LiveWindow/VisionSubsystem/ringlight/Value",
+                  "_title": "ringlight/Value",
+                  "Colors/Color when true": "#7CFC00FF",
+                  "Colors/Color when false": "#8B0000FF"
+                }
+              ]
+            }
+          },
+          "6,0": {
+            "size": [
+              2,
+              4
+            ],
+            "content": {
+              "_type": "Subsystem Layout",
+              "_source0": "network_table:///LiveWindow/ShooterSubsystem",
+              "_title": "LiveWindow/ShooterSubsystem",
+              "Layout/Label position": "TOP",
+              "_children": [
+                {
+                  "_type": "Motor Controller",
+                  "_source0": "network_table:///LiveWindow/ShooterSubsystem/preshooter",
+                  "_title": "preshooter",
+                  "Visuals/Orientation": "HORIZONTAL"
+                },
+                {
+                  "_type": "Motor Controller",
+                  "_source0": "network_table:///LiveWindow/ShooterSubsystem/top1",
+                  "_title": "top1",
+                  "Visuals/Orientation": "HORIZONTAL"
+                },
+                {
+                  "_type": "Motor Controller",
+                  "_source0": "network_table:///LiveWindow/ShooterSubsystem/top2",
+                  "_title": "top2",
+                  "Visuals/Orientation": "HORIZONTAL"
+                },
+                {
+                  "_type": "Motor Controller",
+                  "_source0": "network_table:///LiveWindow/ShooterSubsystem/back",
+                  "_title": "back",
                   "Visuals/Orientation": "HORIZONTAL"
                 }
               ]
@@ -2133,6 +1953,30 @@
               "_type": "Text View",
               "_source0": "network_table:///V/Target/boxes",
               "_title": "/V/Target/boxes"
+            }
+          },
+          "6,1": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Command",
+              "_source0": "network_table:///SmartDashboard/Find target and Rumble",
+              "_title": "SmartDashboard/Find target and Rumble"
+            }
+          },
+          "7,1": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Boolean Box",
+              "_source0": "network_table:///SmartDashboard/Target Found",
+              "_title": "SmartDashboard/Target Found",
+              "Colors/Color when true": "#7CFC00FF",
+              "Colors/Color when false": "#8B0000FF"
             }
           }
         }
