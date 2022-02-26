@@ -9,7 +9,7 @@
         "showGrid": true,
         "hgap": 16.0,
         "vgap": 16.0,
-        "titleType": 0,
+        "titleType": 1,
         "tiles": {
           "5,0": {
             "size": [
@@ -104,7 +104,7 @@
         "tiles": {
           "11,0": {
             "size": [
-              2,
+              1,
               4
             ],
             "content": {
@@ -303,11 +303,9 @@
               "Layout/Label position": "TOP",
               "_children": [
                 {
-                  "_type": "Boolean Box",
+                  "_type": "Toggle Switch",
                   "_source0": "network_table:///LiveWindow/ArmSubsystem/tilt/Value",
-                  "_title": "tilt/Value",
-                  "Colors/Color when true": "#7CFC00FF",
-                  "Colors/Color when false": "#8B0000FF"
+                  "_title": "tilt/Value"
                 }
               ]
             }
@@ -336,11 +334,9 @@
                   "Visuals/Orientation": "HORIZONTAL"
                 },
                 {
-                  "_type": "Boolean Box",
+                  "_type": "Toggle Switch",
                   "_source0": "network_table:///LiveWindow/IntakeSubsystem/intake arm/Value",
-                  "_title": "intake arm/Value",
-                  "Colors/Color when true": "#7CFC00FF",
-                  "Colors/Color when false": "#8B0000FF"
+                  "_title": "intake arm/Value"
                 }
               ]
             }
@@ -384,11 +380,9 @@
               "Layout/Label position": "BOTTOM",
               "_children": [
                 {
-                  "_type": "Boolean Box",
+                  "_type": "Toggle Switch",
                   "_source0": "network_table:///LiveWindow/VisionSubsystem/ringlight/Value",
-                  "_title": "ringlight/Value",
-                  "Colors/Color when true": "#7CFC00FF",
-                  "Colors/Color when false": "#8B0000FF"
+                  "_title": "ringlight/Value"
                 }
               ]
             }
@@ -396,7 +390,7 @@
           "6,0": {
             "size": [
               2,
-              4
+              5
             ],
             "content": {
               "_type": "Subsystem Layout",
@@ -426,6 +420,12 @@
                   "_type": "Motor Controller",
                   "_source0": "network_table:///LiveWindow/ShooterSubsystem/back",
                   "_title": "back",
+                  "Visuals/Orientation": "HORIZONTAL"
+                },
+                {
+                  "_type": "Motor Controller",
+                  "_source0": "network_table:///LiveWindow/ShooterSubsystem/hoodMotor",
+                  "_title": "hoodMotor",
                   "Visuals/Orientation": "HORIZONTAL"
                 }
               ]
@@ -969,7 +969,7 @@
         "showGrid": true,
         "hgap": 16.0,
         "vgap": 16.0,
-        "titleType": 0,
+        "titleType": 1,
         "tiles": {
           "1,1": {
             "size": [
@@ -1977,6 +1977,31 @@
               "_title": "SmartDashboard/Target Found",
               "Colors/Color when true": "#7CFC00FF",
               "Colors/Color when false": "#8B0000FF"
+            }
+          }
+        }
+      }
+    },
+    {
+      "title": "Tab 11",
+      "autoPopulate": false,
+      "autoPopulatePrefix": "",
+      "widgetPane": {
+        "gridSize": 128.0,
+        "showGrid": true,
+        "hgap": 16.0,
+        "vgap": 16.0,
+        "titleType": 0,
+        "tiles": {
+          "4,1": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Command",
+              "_source0": "network_table:///SmartDashboard/Top shooter to 0.1",
+              "_title": "SmartDashboard/Top shooter to 0.1"
             }
           }
         }
