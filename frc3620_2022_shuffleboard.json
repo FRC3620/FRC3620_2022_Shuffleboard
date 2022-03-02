@@ -1983,7 +1983,7 @@
       }
     },
     {
-      "title": "Tab 11",
+      "title": "Climber",
       "autoPopulate": false,
       "autoPopulatePrefix": "",
       "widgetPane": {
@@ -1991,9 +1991,9 @@
         "showGrid": true,
         "hgap": 16.0,
         "vgap": 16.0,
-        "titleType": 0,
+        "titleType": 1,
         "tiles": {
-          "4,1": {
+          "8,0": {
             "size": [
               1,
               1
@@ -2003,8 +2003,243 @@
               "_source0": "network_table:///SmartDashboard/Top shooter to 0.1",
               "_title": "SmartDashboard/Top shooter to 0.1"
             }
+          },
+          "6,0": {
+            "size": [
+              2,
+              4
+            ],
+            "content": {
+              "_type": "Subsystem Layout",
+              "_source0": "network_table:///LiveWindow/TurretSubsystem",
+              "_title": "LiveWindow/TurretSubsystem",
+              "Layout/Label position": "BOTTOM",
+              "_children": [
+                {
+                  "_type": "Motor Controller",
+                  "_source0": "network_table:///LiveWindow/TurretSubsystem/turret drive",
+                  "_title": "turret drive",
+                  "Visuals/Orientation": "HORIZONTAL"
+                }
+              ]
+            }
+          },
+          "3,0": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/climber.power",
+              "_title": "/SmartDashboard/climber.power"
+            }
+          },
+          "3,1": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/climber.extension",
+              "_title": "/SmartDashboard/climber.extension"
+            }
+          },
+          "5,0": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Boolean Box",
+              "_source0": "network_table:///SmartDashboard/climber.encoder_is_valid",
+              "_title": "/SmartDashboard/climber.encoder_is_valid",
+              "Colors/Color when true": "#7CFC00FF",
+              "Colors/Color when false": "#8B0000FF"
+            }
+          },
+          "5,1": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Boolean Box",
+              "_source0": "network_table:///SmartDashboard/climber.doesstationaryhookhavebar",
+              "_title": "SmartDashboard/climber.doesstationaryhookhavebar",
+              "Colors/Color when true": "#7CFC00FF",
+              "Colors/Color when false": "#8B0000FF"
+            }
+          },
+          "4,0": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/climber.current",
+              "_title": "SmartDashboard/climber.current"
+            }
+          },
+          "4,1": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/climber.encoder",
+              "_title": "SmartDashboard/climber.encoder"
+            }
           }
         }
+      }
+    },
+    {
+      "title": "Shooter",
+      "autoPopulate": false,
+      "autoPopulatePrefix": "",
+      "widgetPane": {
+        "gridSize": 128.0,
+        "showGrid": true,
+        "hgap": 16.0,
+        "vgap": 16.0,
+        "titleType": 1,
+        "tiles": {
+          "7,0": {
+            "size": [
+              2,
+              1
+            ],
+            "content": {
+              "_type": "Command",
+              "_source0": "network_table:///SmartDashboard/pre shooter",
+              "_title": "SmartDashboard/pre shooter"
+            }
+          },
+          "5,0": {
+            "size": [
+              2,
+              1
+            ],
+            "content": {
+              "_type": "Command",
+              "_source0": "network_table:///SmartDashboard/Shooter Test Command",
+              "_title": "SmartDashboard/Shooter Test Command"
+            }
+          },
+          "5,3": {
+            "size": [
+              2,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/main.rpm.actual",
+              "_title": "SmartDashboard/main.rpm.actual"
+            }
+          },
+          "0,0": {
+            "size": [
+              5,
+              1
+            ],
+            "content": {
+              "_type": "Number Slider",
+              "_source0": "network_table:///SmartDashboard/main.set",
+              "_title": "SmartDashboard/main.set",
+              "Slider Settings/Min": 0.0,
+              "Slider Settings/Max": 4000.0,
+              "Slider Settings/Block increment": 0.0625,
+              "Visuals/Display value": true
+            }
+          },
+          "7,3": {
+            "size": [
+              2,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/preshooter.rpm.actual",
+              "_title": "SmartDashboard/preshooter.rpm.actual"
+            }
+          },
+          "5,2": {
+            "size": [
+              2,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/preshooter.velocity.actual",
+              "_title": "SmartDashboard/preshooter.velocity.actual"
+            }
+          },
+          "7,2": {
+            "size": [
+              2,
+              1
+            ],
+            "content": {
+              "_type": "Toggle Button",
+              "_source0": "network_table:///SmartDashboard/manual backspin",
+              "_title": "SmartDashboard/manual backspin"
+            }
+          },
+          "0,1": {
+            "size": [
+              5,
+              1
+            ],
+            "content": {
+              "_type": "Number Slider",
+              "_source0": "network_table:///SmartDashboard/back.set",
+              "_title": "SmartDashboard/back.set",
+              "Slider Settings/Min": 0.0,
+              "Slider Settings/Max": 1000.0,
+              "Slider Settings/Block increment": 0.0625,
+              "Visuals/Display value": true
+            }
+          },
+          "0,2": {
+            "size": [
+              5,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/back.calculated",
+              "_title": "SmartDashboard/back.calculated"
+            }
+          },
+          "3,3": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Command",
+              "_source0": "network_table:///SmartDashboard/Intake Ball",
+              "_title": "SmartDashboard/Intake Ball"
+            }
+          }
+        }
+      }
+    },
+    {
+      "title": "Tab 13",
+      "autoPopulate": false,
+      "autoPopulatePrefix": "",
+      "widgetPane": {
+        "gridSize": 128.0,
+        "showGrid": true,
+        "hgap": 16.0,
+        "vgap": 16.0,
+        "titleType": 0,
+        "tiles": {}
       }
     }
   ],
