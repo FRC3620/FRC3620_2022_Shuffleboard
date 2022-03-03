@@ -430,6 +430,17 @@
                 }
               ]
             }
+          },
+          "3,4": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/hood.actual",
+              "_title": "/SmartDashboard/hood.actual"
+            }
           }
         }
       }
@@ -937,7 +948,7 @@
           },
           "13,5": {
             "size": [
-              3,
+              6,
               2
             ],
             "content": {
@@ -955,6 +966,17 @@
               "_type": "Text View",
               "_source0": "network_table:///SmartDashboard/Target Heading",
               "_title": "SmartDashboard/Target Heading"
+            }
+          },
+          "21,5": {
+            "size": [
+              5,
+              2
+            ],
+            "content": {
+              "_type": "Command",
+              "_source0": "network_table:///SmartDashboard/Reset NavX",
+              "_title": "/SmartDashboard/Reset NavX"
             }
           }
         }
@@ -1181,7 +1203,7 @@
         "showGrid": true,
         "hgap": 16.0,
         "vgap": 16.0,
-        "titleType": 0,
+        "titleType": 1,
         "tiles": {
           "6,1": {
             "size": [
@@ -1282,7 +1304,7 @@
               "_title": "/SmartDashboard/drive.strafeVectorMagnitude"
             }
           },
-          "4,4": {
+          "2,1": {
             "size": [
               2,
               2
@@ -1310,7 +1332,7 @@
               "Colors/Color when false": "#8B0000FF"
             }
           },
-          "8,5": {
+          "5,4": {
             "size": [
               2,
               1
@@ -1321,7 +1343,7 @@
               "_title": "/SmartDashboard/Left Back Azimuth"
             }
           },
-          "8,6": {
+          "5,5": {
             "size": [
               2,
               1
@@ -1378,7 +1400,7 @@
               "_title": "SmartDashboard/driver.raw.spin"
             }
           },
-          "4,6": {
+          "2,4": {
             "size": [
               2,
               1
@@ -2215,7 +2237,7 @@
               "_title": "SmartDashboard/back.calculated"
             }
           },
-          "3,3": {
+          "4,3": {
             "size": [
               1,
               1
@@ -2224,6 +2246,56 @@
               "_type": "Command",
               "_source0": "network_table:///SmartDashboard/Intake Ball",
               "_title": "SmartDashboard/Intake Ball"
+            }
+          },
+          "5,1": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/hood.actual",
+              "_title": "/SmartDashboard/hood.actual"
+            }
+          },
+          "6,1": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Boolean Box",
+              "_source0": "network_table:///SmartDashboard/hood.encoderisvalid",
+              "_title": "/SmartDashboard/hood.encoderisvalid",
+              "Colors/Color when true": "#7CFC00FF",
+              "Colors/Color when false": "#8B0000FF"
+            }
+          },
+          "0,3": {
+            "size": [
+              4,
+              1
+            ],
+            "content": {
+              "_type": "Number Slider",
+              "_source0": "network_table:///SmartDashboard/hood.set",
+              "_title": "SmartDashboard/hood.set",
+              "Slider Settings/Min": 0.0,
+              "Slider Settings/Max": 120.0,
+              "Slider Settings/Block increment": 0.0625,
+              "Visuals/Display value": true
+            }
+          },
+          "0,4": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/hood.actual",
+              "_title": "/SmartDashboard/hood.actual"
             }
           }
         }
@@ -2239,7 +2311,85 @@
         "hgap": 16.0,
         "vgap": 16.0,
         "titleType": 0,
-        "tiles": {}
+        "tiles": {
+          "3,0": {
+            "size": [
+              2,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/turretPosition",
+              "_title": "/SmartDashboard/turretPosition"
+            }
+          },
+          "3,1": {
+            "size": [
+              2,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/turretPower",
+              "_title": "/SmartDashboard/turretPower"
+            }
+          },
+          "3,2": {
+            "size": [
+              2,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/turretSpeed",
+              "_title": "/SmartDashboard/turretSpeed"
+            }
+          },
+          "3,3": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Boolean Box",
+              "_source0": "network_table:///SmartDashboard/turretEncoderValid",
+              "_title": "/SmartDashboard/turretEncoderValid",
+              "Colors/Color when true": "#7CFC00FF",
+              "Colors/Color when false": "#8B0000FF"
+            }
+          },
+          "5,0": {
+            "size": [
+              2,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/turretCurrent",
+              "_title": "/SmartDashboard/turretCurrent"
+            }
+          },
+          "7,0": {
+            "size": [
+              2,
+              4
+            ],
+            "content": {
+              "_type": "Subsystem Layout",
+              "_source0": "network_table:///LiveWindow/TurretSubsystem",
+              "_title": "LiveWindow/TurretSubsystem",
+              "Layout/Label position": "BOTTOM",
+              "_children": [
+                {
+                  "_type": "Motor Controller",
+                  "_source0": "network_table:///LiveWindow/TurretSubsystem/turret drive",
+                  "_title": "turret drive",
+                  "Visuals/Orientation": "HORIZONTAL"
+                }
+              ]
+            }
+          }
+        }
       }
     }
   ],
