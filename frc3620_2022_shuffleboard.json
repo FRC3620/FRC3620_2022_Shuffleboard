@@ -368,25 +368,6 @@
               ]
             }
           },
-          "4,4": {
-            "size": [
-              2,
-              1
-            ],
-            "content": {
-              "_type": "Subsystem Layout",
-              "_source0": "network_table:///LiveWindow/VisionSubsystem",
-              "_title": "LiveWindow/VisionSubsystem",
-              "Layout/Label position": "BOTTOM",
-              "_children": [
-                {
-                  "_type": "Toggle Switch",
-                  "_source0": "network_table:///LiveWindow/VisionSubsystem/ringlight/Value",
-                  "_title": "ringlight/Value"
-                }
-              ]
-            }
-          },
           "6,0": {
             "size": [
               2,
@@ -1704,15 +1685,47 @@
               "_title": "SmartDashboard/Find target and Rumble"
             }
           },
-          "7,1": {
+          "7,0": {
+            "size": [
+              2,
+              1
+            ],
+            "content": {
+              "_type": "Subsystem Layout",
+              "_source0": "network_table:///LiveWindow/VisionSubsystem",
+              "_title": "LiveWindow/VisionSubsystem",
+              "Layout/Label position": "BOTTOM",
+              "_children": [
+                {
+                  "_type": "Toggle Switch",
+                  "_source0": "network_table:///LiveWindow/VisionSubsystem/ringlight/Value",
+                  "_title": "ringlight/Value"
+                }
+              ]
+            }
+          },
+          "6,0": {
             "size": [
               1,
               1
             ],
             "content": {
               "_type": "Boolean Box",
-              "_source0": "network_table:///SmartDashboard/Target Found",
-              "_title": "SmartDashboard/Target Found",
+              "_source0": "network_table:///SmartDashboard/vision.target.found",
+              "_title": "/SmartDashboard/vision.target.found",
+              "Colors/Color when true": "#7CFC00FF",
+              "Colors/Color when false": "#8B0000FF"
+            }
+          },
+          "5,0": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Boolean Box",
+              "_source0": "network_table:///SmartDashboard/vision.target.data_is_fresh",
+              "_title": "/SmartDashboard/vision.target.data_is_fresh",
               "Colors/Color when true": "#7CFC00FF",
               "Colors/Color when false": "#8B0000FF"
             }
@@ -2052,7 +2065,7 @@
               "_title": "SmartDashboard/turretPower"
             }
           },
-          "3,2": {
+          "1,0": {
             "size": [
               2,
               1
@@ -2094,7 +2107,7 @@
             ],
             "content": {
               "_type": "Subsystem Layout",
-              "_source0": "network_table:///LiveWindow/TurretSubsystem",
+              "_source0": "network_table:///LiveWindow/VisionSubsystem",
               "_title": "LiveWindow/TurretSubsystem",
               "Layout/Label position": "BOTTOM",
               "_children": [
@@ -2109,12 +2122,131 @@
           }
         }
       }
+    },
+    {
+      "title": "Hood",
+      "autoPopulate": false,
+      "autoPopulatePrefix": "",
+      "widgetPane": {
+        "gridSize": 128.0,
+        "showGrid": true,
+        "hgap": 16.0,
+        "vgap": 16.0,
+        "titleType": 1,
+        "tiles": {
+          "3,0": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Command",
+              "_source0": "network_table:///SmartDashboard/Shooter Test Command",
+              "_title": "/SmartDashboard/Shooter Test Command"
+            }
+          },
+          "3,1": {
+            "size": [
+              4,
+              1
+            ],
+            "content": {
+              "_type": "Number Slider",
+              "_source0": "network_table:///SmartDashboard/hood.set",
+              "_title": "SmartDashboard/hood.set",
+              "Slider Settings/Min": 0.0,
+              "Slider Settings/Max": 100.0,
+              "Slider Settings/Block increment": 0.0625,
+              "Visuals/Display value": true
+            }
+          },
+          "4,0": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Boolean Box",
+              "_source0": "network_table:///SmartDashboard/hood.encoderisvalid",
+              "_title": "/SmartDashboard/hood.encoderisvalid",
+              "Colors/Color when true": "#7CFC00FF",
+              "Colors/Color when false": "#8B0000FF"
+            }
+          },
+          "7,0": {
+            "size": [
+              2,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/hood.actual",
+              "_title": "/SmartDashboard/hood.actual"
+            }
+          },
+          "6,0": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/hood.applied.power",
+              "_title": "/SmartDashboard/hood.applied.power"
+            }
+          },
+          "7,1": {
+            "size": [
+              2,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/hood.requested.position",
+              "_title": "/SmartDashboard/hood.requested.position"
+            }
+          },
+          "3,2": {
+            "size": [
+              6,
+              2
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/hood.output.current",
+              "_title": "SmartDashboard/hood.output.current"
+            }
+          },
+          "9,1": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Command",
+              "_source0": "network_table:///SmartDashboard/preshooter with intake",
+              "_title": "/SmartDashboard/preshooter with intake"
+            }
+          },
+          "9,2": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Command",
+              "_source0": "network_table:///SmartDashboard/Intake Ball",
+              "_title": "/SmartDashboard/Intake Ball"
+            }
+          }
+        }
+      }
     }
   ],
   "windowGeometry": {
-    "x": -7.199999809265137,
-    "y": -7.199999809265137,
-    "width": 1550.4000244140625,
-    "height": 838.4000244140625
+    "x": 0.0,
+    "y": 0.0,
+    "width": 1536.0,
+    "height": 824.0
   }
 }
