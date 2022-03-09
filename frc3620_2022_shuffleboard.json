@@ -1081,25 +1081,6 @@
               "_title": "V/Cargo/frame_checks"
             }
           },
-          "4,0": {
-            "size": [
-              3,
-              2
-            ],
-            "content": {
-              "_type": "Camera Stream",
-              "_source0": "camera_server://Cargo",
-              "_title": "Cargo",
-              "Crosshair/Show crosshair": true,
-              "Crosshair/Crosshair color": "#FFFFFFFF",
-              "Controls/Show controls": true,
-              "Controls/Rotation": "NONE",
-              "compression": -1.0,
-              "fps": -1,
-              "imageWidth": -1,
-              "imageHeight": -1
-            }
-          },
           "7,0": {
             "size": [
               3,
@@ -1274,6 +1255,25 @@
                 }
               ]
             }
+          },
+          "4,0": {
+            "size": [
+              3,
+              2
+            ],
+            "content": {
+              "_type": "Camera Stream",
+              "_source0": "camera_server://Cargo",
+              "_title": "Cargo",
+              "Crosshair/Show crosshair": true,
+              "Crosshair/Crosshair color": "#FFFFFFFF",
+              "Controls/Show controls": true,
+              "Controls/Rotation": "NONE",
+              "compression": -1.0,
+              "fps": -1,
+              "imageWidth": -1,
+              "imageHeight": -1
+            }
           }
         }
       }
@@ -1289,25 +1289,6 @@
         "vgap": 12.0,
         "titleType": 1,
         "tiles": {
-          "2,2": {
-            "size": [
-              3,
-              2
-            ],
-            "content": {
-              "_type": "Camera Stream",
-              "_source0": "camera_server://Target",
-              "_title": "Target",
-              "Crosshair/Show crosshair": false,
-              "Crosshair/Crosshair color": "#FFFFFFFF",
-              "Controls/Show controls": true,
-              "Controls/Rotation": "NONE",
-              "compression": -1.0,
-              "fps": -1,
-              "imageWidth": -1,
-              "imageHeight": -1
-            }
-          },
           "5,2": {
             "size": [
               3,
@@ -1552,6 +1533,25 @@
               "_type": "Toggle Switch",
               "_source0": "network_table:///LiveWindow/VisionSubsystem/ringlight/Value",
               "_title": "LiveWindow/VisionSubsystem/ringlight/Value"
+            }
+          },
+          "2,2": {
+            "size": [
+              3,
+              2
+            ],
+            "content": {
+              "_type": "Camera Stream",
+              "_source0": "camera_server://Target",
+              "_title": "Target",
+              "Crosshair/Show crosshair": false,
+              "Crosshair/Crosshair color": "#FFFFFFFF",
+              "Controls/Show controls": true,
+              "Controls/Rotation": "NONE",
+              "compression": -1.0,
+              "fps": -1,
+              "imageWidth": -1,
+              "imageHeight": -1
             }
           }
         }
@@ -1877,21 +1877,21 @@
                 {
                   "_type": "Boolean Box",
                   "_source0": "network_table:///SmartDashboard/shooter.ready.hood",
-                  "_title": "/SmartDashboard/shooter.ready.hood",
+                  "_title": "SmartDashboard/shooter.ready.hood",
                   "Colors/Color when true": "#7CFC00FF",
                   "Colors/Color when false": "#8B0000FF"
                 },
                 {
                   "_type": "Boolean Box",
                   "_source0": "network_table:///SmartDashboard/shooter.ready.shooter",
-                  "_title": "/SmartDashboard/shooter.ready.shooter",
+                  "_title": "SmartDashboard/shooter.ready.shooter",
                   "Colors/Color when true": "#7CFC00FF",
                   "Colors/Color when false": "#8B0000FF"
                 },
                 {
                   "_type": "Boolean Box",
                   "_source0": "network_table:///SmartDashboard/shooter.ready.turret",
-                  "_title": "/SmartDashboard/shooter.ready.turret",
+                  "_title": "SmartDashboard/shooter.ready.turret",
                   "Colors/Color when true": "#7CFC00FF",
                   "Colors/Color when false": "#8B0000FF"
                 },
@@ -1899,13 +1899,6 @@
                   "_type": "Boolean Box",
                   "_source0": "network_table:///SmartDashboard/vision.target.centered",
                   "_title": "/SmartDashboard/vision.target.centered",
-                  "Colors/Color when true": "#7CFC00FF",
-                  "Colors/Color when false": "#8B0000FF"
-                },
-                {
-                  "_type": "Boolean Box",
-                  "_source0": "network_table:///SmartDashboard/shooter.ready",
-                  "_title": "/SmartDashboard/shooter.ready",
                   "Colors/Color when true": "#7CFC00FF",
                   "Colors/Color when false": "#8B0000FF"
                 }
@@ -2120,6 +2113,92 @@
               "_type": "Command",
               "_source0": "network_table:///SmartDashboard/Intake Ball",
               "_title": "/SmartDashboard/Intake Ball"
+            }
+          }
+        }
+      }
+    },
+    {
+      "title": "Competition",
+      "autoPopulate": false,
+      "autoPopulatePrefix": "",
+      "widgetPane": {
+        "gridSize": 128.0,
+        "showGrid": true,
+        "hgap": 16.0,
+        "vgap": 16.0,
+        "titleType": 0,
+        "tiles": {
+          "3,0": {
+            "size": [
+              2,
+              1
+            ],
+            "content": {
+              "_type": "ComboBox Chooser",
+              "_source0": "network_table:///SmartDashboard/Auto mode",
+              "_title": "SmartDashboard/Auto mode"
+            }
+          },
+          "6,1": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Boolean Box",
+              "_source0": "network_table:///SmartDashboard/shooter.ready",
+              "_title": "SmartDashboard/shooter.ready",
+              "Colors/Color when true": "#7CFC00FF",
+              "Colors/Color when false": "#8B0000FF"
+            }
+          },
+          "7,0": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/NavX heading",
+              "_title": "SmartDashboard/NavX heading"
+            }
+          },
+          "6,0": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Boolean Box",
+              "_source0": "network_table:///SmartDashboard/drive.field.relative",
+              "_title": "SmartDashboard/drive.field.relative",
+              "Colors/Color when true": "#7CFC00FF",
+              "Colors/Color when false": "#8B0000FF"
+            }
+          },
+          "5,0": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Boolean Box",
+              "_source0": "network_table:///SmartDashboard/vision.target.data_is_fresh",
+              "_title": "SmartDashboard/vision.target.data_is_fresh",
+              "Colors/Color when true": "#7CFC00FF",
+              "Colors/Color when false": "#8B0000FF"
+            }
+          },
+          "3,1": {
+            "size": [
+              2,
+              1
+            ],
+            "content": {
+              "_type": "Command",
+              "_source0": "network_table:///SmartDashboard/Send hood home",
+              "_title": "SmartDashboard/Send hood home"
             }
           }
         }
