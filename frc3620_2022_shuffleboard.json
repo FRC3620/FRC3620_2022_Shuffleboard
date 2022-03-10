@@ -2185,7 +2185,7 @@
             "content": {
               "_type": "Boolean Box",
               "_source0": "network_table:///SmartDashboard/vision.target.data_is_fresh",
-              "_title": "SmartDashboard/vision.target.data_is_fresh",
+              "_title": "/SmartDashboard/vision.target.data_is_fresh",
               "Colors/Color when true": "#7CFC00FF",
               "Colors/Color when false": "#8B0000FF"
             }
